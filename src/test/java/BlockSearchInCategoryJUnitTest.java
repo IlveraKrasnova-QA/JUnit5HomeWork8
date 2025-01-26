@@ -8,15 +8,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class BlockSearchInCategoryJUnitTest {
-
-    @BeforeAll
-    static void beforeAll(){
-        Configuration.baseUrl = "https://www.innopolis.com/";
-        Configuration.browserSize = "1928x1080";
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = false;
-    }
+public class BlockSearchInCategoryJUnitTest extends TestBaseForInnopolis {
 
     @CsvSource(value = {
             "Университет Иннополис, Контакты",

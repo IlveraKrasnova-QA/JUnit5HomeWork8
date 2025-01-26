@@ -8,15 +8,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class SearchForProductsInCategoriesJUnitTest {
-
-    @BeforeAll
-    static void beforeAll(){
-        Configuration.baseUrl = "https://www.demoblaze.com/";
-        Configuration.browserSize = "1928x1080";
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = false;
-    }
+public class SearchForProductsInCategoriesJUnitTest extends TestBaseForStore {
 
     @EnumSource(Categories.class)
     @ParameterizedTest(name = "В категории {0} должен быть выбранный товар")

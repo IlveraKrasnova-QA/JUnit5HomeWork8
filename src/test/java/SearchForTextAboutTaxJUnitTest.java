@@ -7,15 +7,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class SearchForTextAboutTaxJUnitTest {
-
-    @BeforeAll
-    static void beforeAll(){
-        Configuration.baseUrl = "https://www.demoblaze.com/";
-        Configuration.browserSize = "1928x1080";
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = false;
-    }
+public class SearchForTextAboutTaxJUnitTest extends TestBaseForStore {
 
     @ValueSource(strings = {
             "Sony vaio i5", "Sony vaio i7", "MacBook air", "Dell i7 8gb"
