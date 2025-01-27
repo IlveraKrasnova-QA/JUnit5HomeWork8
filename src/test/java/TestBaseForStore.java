@@ -7,6 +7,5 @@ public class TestBaseForStore {
         Configuration.baseUrl = "https://www.demoblaze.com/";
         Configuration.browserSize = "1928x1080";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = false;
     }
 }

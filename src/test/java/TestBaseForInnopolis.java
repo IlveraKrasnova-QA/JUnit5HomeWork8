@@ -7,6 +7,5 @@ public class TestBaseForInnopolis {
         Configuration.baseUrl = "https://www.innopolis.com/";
         Configuration.browserSize = "1928x1080";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = false;
     }
 }

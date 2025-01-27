@@ -1,5 +1,3 @@
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -22,6 +20,4 @@ public class BlockSearchInCategoryJUnitTest extends TestBaseForInnopolis {
         $("[class=\"facts__list\"]").shouldHave(text(block));
 
     }
-
-
 }

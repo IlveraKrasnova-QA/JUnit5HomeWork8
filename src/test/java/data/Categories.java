@@ -1,9 +1,9 @@
 package data;
 
 public enum Categories {
-    Laptops("Sony vaio i5"),
-    Monitors("Apple monitor 24"),
-    Phones("Samsung galaxy s6");
+    LAPTOPS("Sony vaio i5"),
+    MONITORS("Apple monitor 24"),
+    PHONES("Samsung galaxy s6");
 
     public final String text;
 
